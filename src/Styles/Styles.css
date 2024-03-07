@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.navbarContainer {
+  flex: 1;
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.form-control {
+  flex: 1;
+}
+.cardsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardstyles {
+  width: 22rem;
+  margin: 18px;
+  padding: 16px;
+  height: 500px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+}
+.card-body {
+  display: grid;
+  grid-template-rows: 80px 80px 40px;
+}
+.cardimageshadows {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  height: 180px;
+  cursor: pointer;
+}
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  object-fit: cover;
+}
+.cardbuttonshadows {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.pagebuttons {
+  margin: 4px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.mainDetailsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.detailsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.detailsContent {
+  flex: 1;
+  margin: 20px;
+}
+.detailsImage {
+  width: 80%;
+}
+.mainCommentContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.commentsFormContainer {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.userDetailsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  column-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
