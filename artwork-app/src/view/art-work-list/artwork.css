@@ -1,0 +1,31 @@
+.artwork-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 576px) {
+  .artwork-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+.square-image {
+  object-fit: cover;
+}
+
+.art-work-card {
+  margin: 2rem;
+}
+
+.pagination-container {
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+}
+
+.search-container {
+  margin: 2rem;
+  display: flex;
+}
