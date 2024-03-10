@@ -10,7 +10,7 @@ export const fetchArtworks = createAsyncThunk(
   async (params, { rejectWithValue }) => {
     try {
       let response = undefined;
-      if (params.search) {
+      if (params.search && params.term) {
         response = await searchArtWorks(params);
       } else {
         response = await fetchArtworksService(params);
