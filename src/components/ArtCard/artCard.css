@@ -1,0 +1,29 @@
+.art-card{
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-bottom: 1px solid black;
+    width: 100%;
+    /* border-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    /* background-color: black; */
+}
+
+.art-card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+.art-img:hover{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.art-img{
+    max-height: 25rem;
+}
+
+.art-title{
+    text-align: center;
+}
