@@ -1,39 +1,70 @@
-# react-coding-challenge
-# Delivery React Coding Challenge
+# Getting Started with Create React App
 
-## 1. Goal
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Your goal is to build a react app that displays a list of books. We will provide guidelines and feature requests below, but ultimately the design and functionality of your app is up to you. Keep in mind functionality and code quality is more important than asthetic design.  The code you write should be maintanable and easy to understand.
+## Available Scripts
 
-## 2. Instructions
+In the project directory, you can run:
 
-Please read through the rest of the requirements and additional info before working on your app.
+### `npm start`
 
-You can use third party libraries, but the more code you write yourself, the better.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You have **1 day** to submit your code, however we want to be respectful of your time and do **not** expect you to work for more than **2 hours** on this challenge.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-When you are finished please submit a pull request.
+### `npm test`
 
-## 3. Basic Requirements
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Create a single page react application using responsive design (the application should render properly on a desktop and mobile device).
-- The application should use the [following](https://api.artic.edu/docs/#quick-start) API to retrieve a set of artwork
-- The artworks should be listed 10/page with pagination
-- Each item title and thumbnail should be clickable to bring up the artwork detail page
-- Display details about the item on a separate page and have a back button to return to the list page and display the page the user was on
-- List the following items on the detail page: _title,artist_display,date_display,main_reference_number, thubnail, dimensions_
-- Implement the ability to search the artwork by title and the ability to filter the results by category
-- Document your design decisions
-- You can create components from scratch or you can use a component library but the more code you write yourself, the better
-- Create a comments form to demonstrate data validation, the form does not need to make an API call to persist the data.
-- using TypeScript is a bonus but not required
+### `npm run build`
 
-## Evaluation Criteria
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- Understanding of core Javascript concepts
-- Optimized and performant code
-- Understanding of the React library
-- Code and component reuse/extensibility
-- Code design
-- Ability to write clear documentation
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
