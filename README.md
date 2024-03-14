@@ -1,39 +1,71 @@
-# react-coding-challenge
-# Delivery React Coding Challenge
+# Artwork Catalog React App - Design Decisions
 
-## 1. Goal
+## Overview
 
-Your goal is to build a react app that displays a list of books. We will provide guidelines and feature requests below, but ultimately the design and functionality of your app is up to you. Keep in mind functionality and code quality is more important than asthetic design.  The code you write should be maintanable and easy to understand.
+The Artwork Catalog React App is designed to provide users with a responsive and functional interface for exploring a curated collection of artworks from the Art Institute of Chicago. This document outlines key design decisions made during the development of the application.
 
-## 2. Instructions
+## Technology Stack
 
-Please read through the rest of the requirements and additional info before working on your app.
+- React: Chosen for its component-based architecture, ease of development, and virtual DOM for efficient updates.
+- React Router: Implemented for client-side navigation, enabling seamless transitions between pages.
+- Axios: Utilized for making asynchronous HTTP requests to the Art Institute of Chicago's API.
+- Material UI: Employed for styling, ensuring a clean and responsive design across different devices.
+- Local State Management: React's local state is used for managing UI-related state within components.
 
-You can use third party libraries, but the more code you write yourself, the better.
+## Component Structure
 
-You have **1 day** to submit your code, however we want to be respectful of your time and do **not** expect you to work for more than **2 hours** on this challenge.
+### Pages
 
-When you are finished please submit a pull request.
+1. artworks/index: Displays the paginated list of artworks with clickable titles and thumbnails.
+2. artworks/ArtworkDetail: Presents detailed information about a selected artwork, including title, artist, date, main reference number, thumbnail, and dimensions.
+3. NotFoundPage: Renders a 404 error message for invalid routes.
 
-## 3. Basic Requirements
+### Components
 
-- Create a single page react application using responsive design (the application should render properly on a desktop and mobile device).
-- The application should use the [following](https://api.artic.edu/docs/#quick-start) API to retrieve a set of artwork
-- The artworks should be listed 10/page with pagination
-- Each item title and thumbnail should be clickable to bring up the artwork detail page
-- Display details about the item on a separate page and have a back button to return to the list page and display the page the user was on
-- List the following items on the detail page: _title,artist_display,date_display,main_reference_number, thubnail, dimensions_
-- Implement the ability to search the artwork by title and the ability to filter the results by category
-- Document your design decisions
-- You can create components from scratch or you can use a component library but the more code you write yourself, the better
-- Create a comments form to demonstrate data validation, the form does not need to make an API call to persist the data.
-- using TypeScript is a bonus but not required
+1. ArtworkList: Renders a paginated list of artworks with clickable titles and thumbnails.
+2. ArtworkDetail: Displays detailed information about a selected artwork.
+3. Search: Enables users to search artworks by title and filter results by category.
+4. loding:provides a visually appealing loading indicator with a circular progress spinner. It is positioned at the center of the screen using CSS transforms, ensuring an intuitive and user-friendly experience while waiting for content to load.
+5. ArtworkCard: represents a card element displaying details of an artwork, including its thumbnail, title, dimensions, and fiscal year. It offers a visually appealing layout with a clickable link to view more information about the artwork. Additionally, it provides a button for users to share the artwork.
+   
+## services
+1. artworks-service: fetches artwork data from an API, offering methods for pagination, ID-based retrieval, and search functionality. Utilizing Axios, it retrieves key artwork details like ID, thumbnail, fiscal year, dimensions, title, and artist info, facilitating seamless data integration within the application.
+2. index: configures an Axios instance for the Art Institute of Chicago's API. It sets the base URL and default content type for JSON requests.
 
-## Evaluation Criteria
+## Responsive Design
 
-- Understanding of core Javascript concepts
-- Optimized and performant code
-- Understanding of the React library
-- Code and component reuse/extensibility
-- Code design
-- Ability to write clear documentation
+- Media Queries: Applied to ensure the application renders appropriately on various screen sizes, providing an optimal user experience.
+- Flexbox and Grid Layouts: Used for creating responsive and flexible layouts without relying heavily on external libraries.
+
+## API Usage
+
+- Endpoints: Utilized the Art Institute of Chicago's API endpoints for retrieving lists of artworks, details of a specific artwork, and performing searches and filters.
+- Fields Parameter: Leveraged the fields parameter to optimize API requests by retrieving only the necessary data for each artwork.
+
+## Error Handling
+
+- HTTP Status Codes: Checked for different HTTP status codes in API responses to handle errors gracefully.
+- 404 Page: Implemented a custom 404 page for invalid routes.
+
+## Comments Form
+
+- Data Validation: Demonstrated data validation in the CommentsForm component, ensuring that user input is validated locally without making an API call to persist data.
+- Snackbar Component: Utilized a simple snackbar component to provide feedback on successful form submission or validation errors.
+
+## TypeScript (Optional)
+
+- *The React application utilizes TypeScript to enhance type safety and facilitate robust development practices, ensuring better code quality and developer productivity.
+
+## Code Quality
+
+- Modular Components: Emphasized the creation of reusable and modular components to enhance maintainability.
+- Consistent Naming Conventions: Followed consistent naming conventions for variables, functions, and components.
+
+## Future Considerations
+
+- Testing: Consider incorporating unit tests and end-to-end tests for improved code reliability.
+- State Management: Evaluate the introduction of state management libraries like Redux for more complex state requirements.
+
+## Conclusion
+
+The Artwork Catalog React App prioritizes functionality, code quality, and maintainability, ensuring a user-friendly experience for exploring artworks. Future improvements and enhancements can be considered based on user feedback and evolving requirements.
