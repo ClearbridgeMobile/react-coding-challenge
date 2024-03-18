@@ -1,0 +1,22 @@
+Design Decisions:
+
+1. **Main Page Styling with Header and Footer:**
+   - **Header:** The header contains the title of the application, styled with a dark background color and white text for better visibility. It is centrally aligned to maintain focus.
+   - **Main Content:** The main content area is styled to have a maximum width of 800px and is centered within the page. The artwork list is displayed in a grid layout, with each artwork card having a border, rounded corners, and a subtle hover effect for interactivity.
+   - **Footer:** The footer is styled similarly to the header, with a dark background color and white text. It contains some additional information about the application or can be customized as needed.
+
+2. **Semantic HTML5 Structure:**
+   - Semantic HTML5 tags like `<header>`, `<nav>`, `<main>`, and `<footer>` are used to provide a clear and meaningful structure to the page. This improves accessibility and SEO.
+   - Proper use of headings (`<h1>`) for main titles and lists (`<ul>`) for navigation items enhances readability and helps search engines understand the content.
+
+3. **Artwork Information Page Styling:**
+   - Each artwork card in the main page displays relevant information such as the title and image. This information is styled to be centered within the card for consistency and aesthetics.
+   - The use of borders, shadows, and hover effects adds depth and visual appeal to the artwork cards, making them stand out.
+
+4. **Comments Form Page Styling:**
+   - The comments form page is designed to provide users with a simple and intuitive interface for submitting comments.
+   - Input fields are styled with subtle borders and padding for a clean appearance.
+   - Form validation is implemented to ensure that users provide required information and input data in the correct format.
+   - The overall design aims to be user-friendly and visually appealing while prioritizing functionality and ease of use.
+
+These design decisions aim to create a cohesive and visually pleasing user experience while ensuring accessibility, usability, and maintainability of the application.
